@@ -5,3 +5,6 @@ Commands related to MongoDB
 mongoexport --db DBName --collection CollectionName --fields Field1,Field2 --type=csv -q '{YOUR_QUERY}' --out Output.csv
 
 Eg: mongoexport --db Namekarna --collection dom_dom --fields id,name --type=csv -q '{"available":true}'  --out filtered_output.csv
+
+## Query to check MongoDB collection by date range in Robo3T
+Eg: db.getCollection('domains_domain').find({'expiry_date':{ "$gte" : ISODate("2020-12-16T00:00:00Z"), "$lt" : ISODate("2020-12-31T00:00:00Z") }})
