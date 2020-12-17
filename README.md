@@ -11,3 +11,6 @@ Eg: db.getCollection('domains_domain').find({'expiry_date':{ "$gte" : ISODate("2
 
 ## Query MongoDB to check for string containing pattern
 Eg: db.getCollection('domains').find({'expiry_date':{$regex:'2020-12-15T*'}})
+
+## Query to find total no. of documents in a collection
+Eg: db.getCollection('domains_domain').find({}).count()
