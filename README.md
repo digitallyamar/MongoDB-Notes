@@ -14,3 +14,7 @@ Eg: db.getCollection('domains').find({'expiry_date':{$regex:'2020-12-15T*'}})
 
 ## Query to find total no. of documents in a collection
 Eg: db.getCollection('domains_domain').find({}).count()
+
+## MongoDB query to sort by a value
+Use sort() with param = 1 for ascending and param = -1 for descending order.
+    Eg: db.getCollection('similar_sites').find({}).sort({'price': -1})
