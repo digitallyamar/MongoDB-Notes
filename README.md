@@ -18,3 +18,6 @@ Eg: db.getCollection('domains_domain').find({}).count()
 ## MongoDB query to sort by a value
 Use sort() with param = 1 for ascending and param = -1 for descending order.
     Eg: db.getCollection('similar_sites').find({}).sort({'price': -1})
+
+## Query MongoDB to count number of records having a field
+Eg: db.getCollection('domains').find({'available':'true', 'GoValue':{"$exists":true}})
