@@ -21,3 +21,6 @@ Use sort() with param = 1 for ascending and param = -1 for descending order.
 
 ## Query MongoDB to count number of records having a field
 Eg: db.getCollection('domains').find({'available':'true', 'GoValue':{"$exists":true}})
+
+## Query MongoDB to get values greater than given value
+Eg: db.getCollection('serp').find({'alexa_rank': {$gt: 1000000}})
